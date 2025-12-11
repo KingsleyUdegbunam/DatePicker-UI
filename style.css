@@ -1,0 +1,85 @@
+section {
+  position: relative;
+  width: fit-content;
+
+  padding: 1rem;
+
+  margin: 0 auto;
+  padding-block: 2rem;
+  display: grid;
+
+  place-content: center;
+
+  grid-template-columns: minmax(250px, max-content);
+}
+
+.input-holder-n-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.date-input {
+  border: none;
+  border-right: 1px solid black;
+  padding: 0.2rem;
+  padding-inline: 0.5rem;
+}
+
+.calendar-btn {
+  padding: 0.2rem;
+  text-align: center;
+
+  margin: 0 auto;
+
+  cursor: pointer;
+}
+
+.calendar {
+  aspect-ratio: 1;
+  max-width: 1.2rem;
+  max-height: 1.2rem;
+}
+
+.month-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.direction {
+  height: 1rem;
+  width: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.dates {
+  border-top: 0.5px solid black;
+}
+
+.calendar-display {
+  position: absolute;
+  top: 4.1rem;
+  left: 1rem;
+  right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  border: 1px solid black;
+}
+
+.date {
+  border: 0.5px solid black;
+}
